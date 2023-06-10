@@ -1,0 +1,68 @@
+html {
+    font-size: 10px;
+}
+
+* {
+    font-family: 'Overpass', sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+    max-width:1440px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+.card {
+    background-color: var(--card-color);
+    width: 41.5rem;
+    height: 41.5rem;
+    border-radius: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 3.5rem;  
+}
+
+.card img {
+
+}
+
+.card p:nth-child(2) {
+    color:var(--title-color);
+    font-size: 3rem;
+}
+
+.card p:nth-child(3) {
+    color: var(--p-color);
+}
+
+.card div:nth-child(4) {
+    color: var(--number-color);
+    font-size: 1.8rem;
+      
+}
+
+.rating-selector {
+    
+}
+
+.card button {
+    color: var(--title-color);
+    background-color: var(--button-color);
+    cursor: pointer;
+    text-transform: uppercase;
+    width: 100%;
+    height: 5rem;
+    border: 0px;
+    border-radius: 3rem;
+    font-size: 2rem;
+}
