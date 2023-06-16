@@ -8,7 +8,7 @@ html {
 
 body {
     background-color: var(--background-color);
-    max-width:1440px;
+    max-width: 1440px;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -21,38 +21,79 @@ p {
 }
 
 .card {
-    background-color: var(--card-color);
+    background-color: hsla(213, 19%, 18%, 0.5);
     width: 41.5rem;
     height: 41.5rem;
     border-radius: 3rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: left;
+    padding:  1.8rem 3.5rem 1.8rem 3.5rem;
+}
+
+.card .circle-container {
+    width: 5rem; 
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--card-color);
+    display: flex;
+    justify-content: center;
     align-items: center;
-    padding: 3.5rem;  
-}
-
-.card img {
-
-}
+    
+  }
+  
+  .card .circle-container img {    
+    max-width: 30%;
+  }
 
 .card p:nth-child(2) {
-    color:var(--title-color);
-    font-size: 3rem;
+    color: var(--title-color);
+    font-size: 2.8rem;    
 }
 
 .card p:nth-child(3) {
     color: var(--p-color);
+    line-height: 2.4rem;
 }
 
 .card div:nth-child(4) {
     color: var(--number-color);
     font-size: 1.8rem;
-      
+
 }
 
 .rating-selector {
-    
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rating-selector input[type="radio"] {
+    display: none;    
+}
+
+.rating-selector label {
+    display: inline-block;
+    width: 5rem; 
+    height: 5rem;
+    border-radius: 50%;
+    background-color: var(--card-color);
+    font-size: 1.6rem;
+    text-align: center;
+    line-height: 5rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;    
+}
+
+.rating-selector label:hover {
+    background-color: var(--button-color);
+    color: var(--title-color);
+}
+
+.rating-selector input[type="radio"]:checked+label {
+    background-color: var(--number-color);
+    color: var(--title-color);   
 }
 
 .card button {
@@ -60,9 +101,15 @@ p {
     background-color: var(--button-color);
     cursor: pointer;
     text-transform: uppercase;
-    width: 100%;
-    height: 5rem;
+    width: 99%;
+    height: 4.5rem;
     border: 0px;
     border-radius: 3rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+}
+
+.card button:hover {
+    color: var(--button-color);
+    background-color: var(--title-color);
 }
